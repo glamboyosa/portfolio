@@ -1,0 +1,35 @@
+nav {
+  font-size: 30px;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  color: #fff;
+}
+.nav {
+  background-color: #000;
+  z-index: 300;
+  position: fixed;
+  width: 100%;
+}
+.nav .mainNav {
+  margin-left: 30%;
+  float: left;
+}
+.mainNav {
+  display: flex;
+  justify-content: space-around;
+  float: right;
+  list-style: none;
+}
+.mainNav li {
+  margin-left: 20px;
+}
+@media only screen and (max-width: 860px) {
+  nav {
+    font-size: 20px;
+  }
+  .nav .mainNav {
+    margin-left: 18%;
+    font-size: 100%;
+    float: left;
+  }
+}

@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Footer from "./UI/Footer/Footer"
 import Aux from "../hoc/hoc"
 import "../index.css"
+import { Element } from "react-scroll"
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -25,7 +26,9 @@ const Layout = ({ children }) => {
   return (
     <Aux>
       <main>{children}</main>
-      <Footer />
+      <Element name="contact">
+        <Footer />
+      </Element>
     </Aux>
   )
 }
