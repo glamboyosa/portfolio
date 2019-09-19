@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+footer {
+  background-color: #000;
+  font-size: 30px;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  color: #fff;
+}
+.h4 {
+  font-size: 100%;
+  padding: 20px;
+}
+small {
+  color: red;
+}
+.flexParent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.icon {
+  font-size: 120%;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.github:hover {
+  color: #333;
+}
+.mail:hover {
+  color: #c71610;
+}
+@media only screen and (max-width: 846px) {
+  .flexParent {
+    flex-wrap: wrap;
+  }
+}
