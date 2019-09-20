@@ -5,10 +5,10 @@ class TypedContainer extends Component {
   componentDidMount() {
     init("#element", {
       strings: [
-        `I'm a Front-end developer`,
-        `Web designer`,
-        `Lead guitarist`,
-        `JavaScript enthusiast`,
+        `I'm a Front-end developer,`,
+        `Web designer,`,
+        `Lead guitarist,`,
+        `JavaScript enthusiast.`,
       ],
       typeSpeed: 80,
       backSpeed: 50,
