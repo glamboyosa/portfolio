@@ -1,8 +1,8 @@
 import React from "react"
 import classes from "../UI/Portfolio/sections.module.css"
-import yin from "../../images/yin.png"
-import mason from "../../images/mason.png"
-import aero from "../../images/aero.png"
+import Yin from "../../images/yin.png"
+import Mason from "../../images/mason.png"
+import Aero from "../../images/aero.png"
 const frontend = () => {
   return (
     <div>
@@ -10,8 +10,8 @@ const frontend = () => {
         <h2>Camp Mason</h2>
         <img
           className={classes.portfolioImages}
-          src={mason}
-          alt="camp mason screenshot"
+          src={Mason}
+          alt="camp Mason screenshot"
         />
         <p className={classes.portfolioParagraph}>
           Technologies used: React, Redux, CSS modules, Axios.
@@ -43,7 +43,7 @@ const frontend = () => {
         <h2>Yinagi News</h2>
         <img
           className={classes.portfolioImages}
-          src={yin}
+          src={Yin}
           alt="yinagi screenshot"
         />
         <p className={classes.portfolioParagraph}>
@@ -76,7 +76,7 @@ const frontend = () => {
         <h2>Aero-Starboard</h2>
         <img
           className={classes.portfolioImages}
-          src={aero}
+          src={Aero}
           alt="Aero-Starboard screenshot"
         />
         <p className={classes.portfolioParagraph}>

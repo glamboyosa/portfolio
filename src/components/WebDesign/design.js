@@ -1,8 +1,8 @@
 import React from "react"
 import classes from "../UI/Portfolio/sections.module.css"
-import Bootstrap from "../../images/bootstrap.png"
-import Flexbox from "../../images/flexbox.png"
-import VS from "../../images/VS.png"
+import bootstrap from "../../images/bootstrap.png"
+import flexbox from "../../images/flexbox.png"
+import Vs from "../../images/VS.png"
 const design = () => {
   return (
     <div>
@@ -10,7 +10,7 @@ const design = () => {
         <h2>Bootstrap Recreation</h2>
         <img
           className={classes.portfolioImages}
-          src={Bootstrap}
+          src={bootstrap}
           alt="bootstrap screenshot"
         />
         <p className={classes.portfolioParagraph}>
@@ -38,7 +38,7 @@ const design = () => {
         <h2>Google Webmasters Recreation</h2>
         <img
           className={classes.portfolioImages}
-          src={Flexbox}
+          src={flexbox}
           alt="Google webmasters screenshot"
         />
         <p className={classes.portfolioParagraph}>
@@ -67,7 +67,7 @@ const design = () => {
         <h2>Visual Studio Preview Recreation</h2>
         <img
           className={classes.portfolioImages}
-          src={VS}
+          src={Vs}
           alt="Visual Studio Preview screenshot"
         />
         <p className={classes.portfolioParagraph}>
