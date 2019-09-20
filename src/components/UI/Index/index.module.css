@@ -26,6 +26,13 @@ nav {
 .mainNav li {
   margin-left: 20px;
 }
+.mainNav li:after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: auto;
+  background-color: #e25822;
+}
 @media only screen and (max-width: 860px) {
   nav {
     font-size: 15px;
