@@ -43,7 +43,7 @@ a {
 }
 @media only screen and (max-width: 860px) {
   .p {
-    font-size: 150%;
+    font-size: 130%;
     padding-top: 30%;
   }
 }
