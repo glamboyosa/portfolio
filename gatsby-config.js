@@ -18,13 +18,20 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Timothy Ogbemudia`,
+        short_name: `Timothy`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#cf6d17`,
+        theme_color: `#cf6d17`,
+        display: `standalone`,
+        include_favicon: false,
+        icon: `src/images/Timothy.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/index/`, `/frontend/`, `/backend/`, `/design/`],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
