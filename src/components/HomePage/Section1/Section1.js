@@ -1,5 +1,5 @@
 import React from "react"
-import classes from "./section1.module.css"
+import classes from "./Section1.module.css"
 const Section1 = () => {
   return (
     <div className={classes.section1}>
