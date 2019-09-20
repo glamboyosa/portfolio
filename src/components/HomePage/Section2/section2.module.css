@@ -1,11 +1,13 @@
-/* @import url("https://fonts.googleapis.com/css?family=Righteous&display=swap"); */
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 .section2 {
   padding: 10px;
   font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  /* font-family: "Righteous", cursive; */
   font-family: "Permanent Marker", cursive;
   background-color: #edf0f1;
   text-align: center;
@@ -25,6 +27,7 @@
 }
 @media only screen and (max-width: 860px) {
   .section2 {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .img {

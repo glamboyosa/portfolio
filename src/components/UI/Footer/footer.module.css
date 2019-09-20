@@ -14,8 +14,13 @@ small {
   color: red;
 }
 .flexParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 10px;
 }
@@ -33,6 +38,7 @@ small {
 }
 @media only screen and (max-width: 846px) {
   .flexParent {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }

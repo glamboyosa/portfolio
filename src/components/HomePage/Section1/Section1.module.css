@@ -1,8 +1,6 @@
-/* @import url("https://fonts.googleapis.com/css?family=Righteous&display=swap"); */
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 .section1 {
   padding: 20px;
-  /* font-family: "Righteous", cursive; */
   font-family: "Permanent Marker", cursive;
   font-size: 30px;
   text-align: center;

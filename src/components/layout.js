@@ -8,9 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import "../index.css"
 import Footer from "./UI/Footer/Footer"
 import Aux from "../hoc/hoc"
-import "../index.css"
 import { Element } from "react-scroll"
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
