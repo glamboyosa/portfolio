@@ -17,7 +17,7 @@ const Footer = () => {
         </a>
       </div>
       <span>
-        Made with <small>❤</small> by Timothy Ogbemudia.
+        Made with <small>❤</small> by Timothy Ogbemudia &copy; 2019.
       </span>
       <br />
       <span>
