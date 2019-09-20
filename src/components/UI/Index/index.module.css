@@ -28,7 +28,7 @@ nav {
 }
 @media only screen and (max-width: 860px) {
   nav {
-    font-size: 25px;
+    font-size: 15px;
   }
   .mainNav {
     margin-right: 20px;
