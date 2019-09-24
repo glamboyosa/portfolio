@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
 footer {
   background-color: #000;
   font-size: 30px;
@@ -37,6 +38,9 @@ small {
   color: #c71610;
 }
 @media only screen and (max-width: 846px) {
+  footer {
+    font-family: "Righteous", cursive;
+  }
   .flexParent {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;

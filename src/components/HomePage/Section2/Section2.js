@@ -23,15 +23,6 @@ const Section2 = () => {
           built from the user's point of view.
         </p>
       </div>
-      <div>
-        <img className={classes.img} src={Code} alt="coding logo" />
-        <span className={classes.span}>Clean Code</span>
-        <p className={classes.paragraph}>
-          I believe strongly that good code is code that is <br />
-          unobfuscated and easy to understand by others <br /> and so I endeavor
-          to write clean code be it React or CSS.
-        </p>
-      </div>
     </div>
   )
 }

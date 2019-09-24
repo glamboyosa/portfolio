@@ -12,7 +12,12 @@ const Section1 = () => {
         <br /> In addition to frontend development, I occasionally build REST
         APIs <br /> with Node and Express and sometimes .Net Core 2.2.
         <br /> In my spare time I enjoy experimenting with React framework's
-        like Gatsby.
+        like Gatsby. <br /> When i'm not writing or learning about code , <br />
+        i'm usually thrashing out licks on guitar a la Stevie Ray Vaughan or{" "}
+        <br />
+        on my favorite social media, Twitter or <br /> you could catch me on
+        Youtube watching every and <br />
+        anything from videos on the world war to The Weeknd live.
       </p>
     </div>
   )
