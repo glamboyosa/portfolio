@@ -91,7 +91,8 @@
 @media only screen and (max-width: 850px) {
   .section3 {
     font-family: "Righteous", cursive;
-
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .portfolioh3tag {
