@@ -1,5 +1,4 @@
-import React, { Component } from "react"
-
+import React, { useState, useEffect } from "react"
 import Header from "../components/HomePage/Header/header"
 import FirstSection from "../components/HomePage/Section1/Section1"
 import Layout from "../components/layout"
@@ -7,7 +6,6 @@ import Section2 from "../components/HomePage/Section2/Section2"
 import Section3 from "../components/HomePage/Section3/Section3"
 import SEO from "../components/seo"
 import classes from "../components/UI/Index/index.module.css"
-import * as Scroll from "react-scroll"
 import {
   Link,
   Element,
@@ -16,20 +14,17 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll"
-class IndexPage extends Component {
-  state = {
-    isFixed: false,
-  }
-  fixNav = () => {
+const IndexPage = () => {
+  const [isFixed, setIsFixed] = useState(false)
+  const fixNav = () => {
     if (window.scrollY > 500) {
-      console.log(` my window`)
-
-      this.setState({ isFixed: true })
+      setIsFixed(!isFixed)
     } else {
-      this.setState({ isFixed: false })
+      setIsFixed(!isFixed)
     }
   }
-  componentDidMount() {
+  useEffect(() => {
+    console.log("mounts the DOM")
     Events.scrollEvent.register("begin", function() {
       console.log("begin", arguments)
     })
@@ -37,24 +32,27 @@ class IndexPage extends Component {
     Events.scrollEvent.register("end", function() {
       console.log("end", arguments)
     })
-    window.addEventListener("scroll", this.fixNav)
-  }
-  componentWillUnmount() {
-    Events.scrollEvent.remove("begin")
-    Events.scrollEvent.remove("end")
-    window.removeEventListener("scroll", this.fixNav)
-  }
-  scrollToTop = () => {
+    window.addEventListener("scroll", fixNav)
+  }, [])
+  useEffect(() => {
+    return () => {
+      Events.scrollEvent.remove("begin")
+      Events.scrollEvent.remove("end")
+      window.removeEventListener("scroll", fixNav)
+      console.log("unmounted the DOM")
+    }
+  }, [])
+  const scrollToTop = () => {
     scroll.scrollToTop()
   }
-  scrollTo() {
+  const scrollTo = () => {
     scroller.scrollTo("scroll-to-element", {
       duration: 800,
       delay: 0,
       smooth: "easeInOutQuart",
     })
   }
-  scrollToWithContainer() {
+  const scrollToWithContainer = () => {
     let goToContainer = new Promise((resolve, reject) => {
       Events.scrollEvent.register("end", () => {
         resolve()
@@ -78,49 +76,47 @@ class IndexPage extends Component {
     )
   }
 
-  render() {
-    return (
-      <Layout>
-        <SEO title="Home" />
-        <nav className={this.state.isFixed ? classes.nav : null}>
-          <ul className={classes.mainNav}>
-            <li>
-              {" "}
-              <Link to="home" spy={true} smooth={true} duration={1000}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="about" spy={true} smooth={true} duration={1000}>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="portfolio" spy={true} smooth={true} duration={1000}>
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link to="contact" spy={true} smooth={true} duration={1000}>
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        <Element name="home">
-          <Header />
-        </Element>
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <nav className={isFixed ? classes.nav : null}>
+        <ul className={classes.mainNav}>
+          <li>
+            {" "}
+            <Link to="home" spy={true} smooth={true} duration={1000}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="about" spy={true} smooth={true} duration={1000}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="portfolio" spy={true} smooth={true} duration={1000}>
+              Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" spy={true} smooth={true} duration={1000}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <Element name="home">
+        <Header />
+      </Element>
 
-        <Element name="about">
-          <FirstSection />
-        </Element>
-        <Section2 />
-        <Element name="portfolio">
-          <Section3 />
-        </Element>
-      </Layout>
-    )
-  }
+      <Element name="about">
+        <FirstSection />
+      </Element>
+      <Section2 />
+      <Element name="portfolio">
+        <Section3 />
+      </Element>
+    </Layout>
+  )
 }
 
 export default IndexPage

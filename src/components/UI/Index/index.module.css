@@ -1,24 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+
 nav {
   font-size: 30px;
   font-family: "Permanent Marker", cursive;
   text-align: center;
   color: #fff;
 }
+
 .nav {
   background-color: #000;
   z-index: 300;
   position: fixed;
   width: 100%;
 }
+
 .nav .mainNav {
   margin-left: 30%;
   float: left;
 }
+
 .nav .mainNav li {
   margin-left: 20px;
 }
+
 .mainNav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,9 +33,12 @@ nav {
   float: right;
   list-style: none;
 }
+
 .mainNav li {
   margin-left: 20px;
+  cursor: pointer;
 }
+
 .mainNav li:after {
   content: " ";
   display: block;
@@ -38,14 +46,17 @@ nav {
   width: auto;
   background-color: #e25822;
 }
+
 @media only screen and (max-width: 860px) {
   nav {
     font-size: 15px;
     font-family: "Righteous", cursive;
   }
+
   .mainNav {
     margin-right: 20px;
   }
+
   .nav .mainNav {
     margin-left: 5%;
     font-size: 100%;

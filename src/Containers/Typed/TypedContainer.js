@@ -1,8 +1,8 @@
-import React, { Component } from "react"
+import React, { useEffect } from "react"
 import "./Typed.css"
 import { init } from "ityped"
-class TypedContainer extends Component {
-  componentDidMount() {
+const TypedContainer = () => {
+  useEffect(() => {
     init("#element", {
       strings: [
         `I'm a Front-end developer,`,
@@ -15,10 +15,9 @@ class TypedContainer extends Component {
       loop: true,
       showCursor: true,
     })
-  }
-  render() {
-    return <span id="element"></span>
-  }
+  }, [])
+
+  return <span id="element"></span>
 }
 
 export default TypedContainer
