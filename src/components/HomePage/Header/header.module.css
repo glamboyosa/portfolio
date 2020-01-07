@@ -1,13 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
 .header {
-  background-image: -webkit-gradient(
-      linear,
+  background-image: -webkit-gradient(linear,
       left top,
       left bottom,
       from(rgba(0, 0, 0, 0.46)),
-      to(rgba(0, 0, 0, 0.46))
-    ),
+      to(rgba(0, 0, 0, 0.46))),
     url("https://cdn.dribbble.com/users/1510508/screenshots/3983260/forreststar-1.gif");
   background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
     url("https://cdn.dribbble.com/users/1510508/screenshots/3983260/forreststar-1.gif");
@@ -16,19 +12,22 @@
   background-attachment: fixed;
   height: 80vh;
   color: #fff;
-  font-family: "Permanent Marker", cursive;
+
   font-size: 30px;
   text-align: center;
 }
+
 .p {
   font-size: 170%;
   padding-top: 15%;
 }
+
 a {
   text-decoration: none;
   color: #fff;
   font-family: inherit;
 }
+
 .btn {
   color: #fff;
   padding: 10px 30px;
@@ -38,19 +37,20 @@ a {
   background-color: #cf6d17;
   margin-right: 15px;
 }
+
 .btn:hover {
   border: 1px solid #e67e22;
   background-color: #e67e22;
 }
+
 @media only screen and (max-width: 860px) {
-  .header {
-    font-family: "Righteous", cursive;
-  }
+
   .p {
     font-size: 90%;
     padding-top: 30%;
   }
 }
+
 @media only screen and (max-width: 1000px) {
   .p {
     font-size: 130%;

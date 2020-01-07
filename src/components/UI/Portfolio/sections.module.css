@@ -1,28 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
 .sections {
-  font-family: "Permanent Marker", cursive;
   font-size: 30px;
   text-align: center;
   color: #000;
 }
+
 .portfolioImages {
   margin: 10px 0;
   width: 60%;
   height: 80%;
 }
+
 .portfolioParagrah {
   margin: 10px 0;
 }
+
 .portfolioLink {
   font-size: 70%;
   color: #333;
 
   display: block;
   text-decoration: underline;
-}
-@media only screen and (max-width: 860px) {
-  .sections {
-    font-family: "Righteous", cursive;
-  }
 }
