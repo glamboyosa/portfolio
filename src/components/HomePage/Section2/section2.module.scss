@@ -1,0 +1,44 @@
+$color-black: #000;
+$color-white-dark: #edf0f1;
+.section2 {
+  padding: 1rem;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  background-color: $color-white-dark;
+  text-align: center;
+  color: $color-black;
+  margin: 0 1rem;
+  &Box:first-child {
+    margin-right: 2rem;
+  }
+  &Img {
+    width: 5rem;
+  }
+  &Label {
+    display: block;
+    text-decoration: underline;
+    font-weight: 700;
+  }
+  &Text {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .section2 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    &Img {
+      margin: 3rem 0;
+    }
+    &Text {
+      font-size: 2.5rem;
+    }
+  }
+}

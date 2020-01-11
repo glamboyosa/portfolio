@@ -26,7 +26,6 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  float: right;
   list-style: none;
 }
 
@@ -50,6 +49,7 @@ nav {
 
   .mainNav {
     margin-right: 20px;
+    width: 100%;
   }
 
   .nav .mainNav {

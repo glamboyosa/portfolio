@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import "../index.css"
+import "../index.scss"
 import Footer from "./UI/Footer/Footer"
 import Aux from "../hoc/hoc"
 import { Element } from "react-scroll"

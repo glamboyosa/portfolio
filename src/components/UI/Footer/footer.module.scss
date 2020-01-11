@@ -1,0 +1,56 @@
+$color-black: #000;
+$color-white: #fff;
+$color-grey: #333;
+$color-crimson: #c71610;
+$color-light-blue: #1da1f2;
+$color-red: red;
+.footer {
+  background-color: $color-black;
+  font-size: 3rem;
+  text-align: center;
+  color: $color-white;
+  &Text {
+    font-size: 2rem;
+  }
+  &Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+small {
+  color: $color-red;
+}
+
+.icon {
+  font-size: 120%;
+}
+
+.twitter:hover {
+  color: $color-light-blue;
+}
+
+.github:hover {
+  color: $color-grey;
+}
+
+.mail:hover {
+  color: $color-crimson;
+}
+
+@media only screen and (max-width: 860px) {
+  .footer {
+    font-size: 2.5rem;
+    &Container {
+      flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+    }
+  }
+}
