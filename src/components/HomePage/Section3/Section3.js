@@ -1,5 +1,5 @@
 import React from "react"
-import classes from "./section3.module.css"
+import classes from "./section3.module.scss"
 import { Link } from "gatsby"
 const Section3 = () => {
   return (
