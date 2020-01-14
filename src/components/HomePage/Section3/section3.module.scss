@@ -1,13 +1,16 @@
 $color-orange: #cf6d17;
 $color-black: #000;
+$color-white: #fff;
 
 .portfolio {
   position: relative;
   padding: 2rem;
+  font-size: 2.5rem;
 
   &Heading {
     &Primary {
       font-size: 4rem;
+      text-align: center;
     }
 
     &Secondary {
@@ -17,27 +20,33 @@ $color-black: #000;
 
 
   &FlexContainer {
+    margin: 1rem;
     display: flex;
     justify-content: space-around;
   }
 
   &Card {
-    position: absolute;
     padding: 1.5rem 3rem;
     box-shadow: 0 1rem 1rem rgba($color-black, .6);
-    height: 10rem;
+    margin: 1.5rem;
 
-    &Design {
-      top: calc(100% - 10rem);
+    &:not(:last-child) {
+      margin-right: 2rem;
     }
+
 
   }
 
   &Image {
-    height: 3rem;
+    height: 70vh;
 
     &1 {
       background-image: url("https://i.imgur.com/QCPbtHb.png");
+    }
+
+    &2 {
+      background-image: url("https://media.giphy.com/media/13XW2MJE0XCoM0/giphy.gif");
+      background-size: cover;
     }
 
     &3 {
@@ -49,6 +58,7 @@ $color-black: #000;
     margin: 1rem 0;
 
     &Text {
+      margin-right: 1rem;
       display: inline-block;
     }
   }
@@ -59,114 +69,43 @@ $color-black: #000;
   }
 
   &Links {
+
+
     &Tag {
       transition: .2s;
+      color: $color-black;
+      margin-right: 1.5rem;
+      padding: 1rem 2rem;
+      text-decoration: underline;
 
       &:hover {
         background-color: $color-orange;
+        text-decoration: none;
+        color: $color-white;
       }
     }
   }
 }
 
-.section3 {
-  padding: 10px;
-  font-size: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #fff;
-  text-align: center;
-  color: #000;
-}
-
-.portfolioh3tag {
-  text-align: center;
-  color: #000;
-  font-size: 35px;
-}
-
-.btn {
-  color: #fff;
-  padding: 10px 20px;
-  font-family: inherit;
-  font-size: 60%;
-  margin: 10px 0;
-  border: 1px solid #cf6d17;
-  background-color: #cf6d17;
-}
-
-.main {
-  margin: 20px 1.6%;
-  overflow: hidden;
-  position: relative;
-}
-
-.main .section3Img {
-  -o-object-fit: cover;
-  object-fit: cover;
-  -webkit-transition: -webkit-transform 200ms ease-in;
-  transition: -webkit-transform 200ms ease-in;
-  transition: transform 200ms ease-in;
-  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
-  height: 100%;
-  width: 90%;
-}
-
-.main:hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.show {
-  background-color: #cf6d17;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
-  width: 100%;
-  height: 100%;
-}
-
-.main:hover .show {
-  opacity: 1;
-}
-
-.btn:hover {
-  color: #000;
-  border: 1px solid #fff;
-  background-color: #fff;
-}
 
 @media only screen and (max-width: 850px) {
-  .section3 {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
+  .portfolio {
+    &FlexContainer {
+      flex-wrap: wrap;
+    }
 
 
-  .main:focus .show {
-    opacity: 1;
-  }
+    &Image {
+      height: 80vh;
+      width: 100%;
 
-  .main:focus img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+
+    }
+
+    &Links {
+      &Tag {
+        font-size: 1.5rem;
+      }
+    }
   }
 }

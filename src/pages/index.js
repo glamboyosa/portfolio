@@ -3,7 +3,8 @@ import Header from "../components/HomePage/Header/header"
 import FirstSection from "../components/HomePage/Section1/Section1"
 import Layout from "../components/layout"
 import Section2 from "../components/HomePage/Section2/Section2"
-import Section3 from "../components/HomePage/Section3/Section3"
+import Footer from "../components/UI/Footer/Footer"
+import PortfolioSection from "../components/HomePage/Section3/portfolio-section"
 import SEO from "../components/seo"
 import classes from "../components/UI/Index/index.module.css"
 import {
@@ -113,7 +114,10 @@ const IndexPage = () => {
       </Element>
       <Section2 />
       <Element name="portfolio">
-        <Section3 />
+        <PortfolioSection />
+      </Element>
+      <Element name="contact">
+        <Footer />
       </Element>
     </Layout>
   )

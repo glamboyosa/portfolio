@@ -4,7 +4,7 @@ const PortfolioSection = () => {
   return (
     <div className={classes.portfolio}>
       <h3 className={classes.portfolioHeadingPrimary}>Portfolio</h3>
-      <div className={portfolioFlexContainer}>
+      <div className={classes.portfolioFlexContainer}>
         <div className={classes.portfolioCard}>
           <div
             className={[classes.portfolioImage, classes.portfolioImage1].join(
@@ -22,8 +22,16 @@ const PortfolioSection = () => {
             fictional camp using advanced React and Redux techniques & concepts.
           </p>
           <div className={classes.portfolioLinks}>
-            <a href="http://yinaginews.herokuapp.com/">Check it out!</a>
-            <a href="https://github.com/glamboyosa/yinaginews">
+            <a
+              className={classes.portfolioLinksTag}
+              href="http://yinaginews.herokuapp.com/"
+            >
+              Check it out!
+            </a>
+            <a
+              className={classes.portfolioLinksTag}
+              href="https://github.com/glamboyosa/yinaginews"
+            >
               View the source code !
             </a>
           </div>
@@ -42,7 +50,7 @@ const PortfolioSection = () => {
             Reusable CSS Components
           </h2>
           <div className={classes.portfolioSkills}>
-            <span className={classes.portfolioSkillsText}>Tools:</span>
+            <span className={classes.portfolioSkillsText}>Tools: </span>
             HTML & CSS.
           </div>
           <p className={classes.portfolioDescription}>
@@ -51,11 +59,16 @@ const PortfolioSection = () => {
             code that other developers can find useful when building sites.
           </p>
           <div className={classes.portfolioLinks}>
-            <a href="https://github.com/glamboyosa/Reusable-CSS-Components">
+            <a
+              className={classes.portfolioLinksTag}
+              href="https://github.com/glamboyosa/Reusable-CSS-Components"
+            >
               View the source code (and contribute 😊) !
             </a>
           </div>
         </div>
+      </div>
+      <div className={classes.portfolioFlexContainer}>
         <div className={classes.portfolioCard}>
           <div
             className={[classes.portfolioImage, classes.portfolioImage3].join(
@@ -64,7 +77,7 @@ const PortfolioSection = () => {
           ></div>
           <h2 className={classes.portfolioHeadingSecondary}>DZT Coins</h2>
           <div className={classes.portfolioSkills}>
-            <span className={classes.portfolioSkillsText}>Tools:</span>
+            <span className={classes.portfolioSkillsText}>Tools: </span>
             HTML & SCSS.
           </div>
           <p className={classes.portfolioDescription}>
@@ -74,13 +87,13 @@ const PortfolioSection = () => {
           </p>
           <div className={classes.portfolioLinks}>
             <a
-              className={classes.portolioLinksTag}
+              className={classes.portfolioLinksTag}
               href="https://cranky-spence-ace670.netlify.com/"
             >
               Check it out!
             </a>
             <a
-              className={classes.portolioLinksTag}
+              className={classes.portfolioLinksTag}
               href="https://github.com/glamboyosa/DZT"
             >
               View the source code !

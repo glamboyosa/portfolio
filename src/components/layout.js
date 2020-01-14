@@ -26,9 +26,9 @@ const Layout = ({ children }) => {
   return (
     <Aux>
       <main>{children}</main>
-      <Element name="contact">
+      {/* <Element name="contact">
         <Footer />
-      </Element>
+      </Element> */}
     </Aux>
   )
 }
