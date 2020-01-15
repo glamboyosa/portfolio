@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import Header from "../components/HomePage/Header/header"
 import FirstSection from "../components/HomePage/Section1/Section1"
 import Layout from "../components/layout"
-import Section2 from "../components/HomePage/Section2/Section2"
 import Footer from "../components/UI/Footer/Footer"
 import PortfolioSection from "../components/HomePage/Section3/portfolio-section"
 import SEO from "../components/seo"
@@ -17,11 +16,12 @@ import {
 } from "react-scroll"
 const IndexPage = () => {
   const [isFixed, setIsFixed] = useState(false)
+  console.log(isFixed)
   const fixNav = () => {
     if (window.scrollY > 500) {
       setIsFixed(!isFixed)
     } else {
-      setIsFixed(!isFixed)
+      setIsFixed(false)
     }
   }
   useEffect(() => {
@@ -80,7 +80,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <nav className={isFixed ? classes.nav : null}>
+      <nav className={isFixed && classes.nav}>
         <ul className={classes.mainNav}>
           <li>
             {" "}
@@ -106,13 +106,12 @@ const IndexPage = () => {
         </ul>
       </nav>
       <Element name="home">
-        <Header />
+        <Header className={classes.header} />
       </Element>
 
       <Element name="about">
         <FirstSection />
       </Element>
-      <Section2 />
       <Element name="portfolio">
         <PortfolioSection />
       </Element>
