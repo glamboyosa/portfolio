@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import "./Typed.css"
+import "./Typed.scss"
 import { init } from "ityped"
 const TypedContainer = () => {
   useEffect(() => {

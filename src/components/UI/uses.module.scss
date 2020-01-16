@@ -1,0 +1,31 @@
+$color-primary: #cf6d17;
+$color-black: #000;
+.uses {
+  padding: 2rem;
+  &:not(:last-child) {
+    border-bottom: 4px solid $color-primary;
+    width: 50%;
+    margin: 0 auto;
+  }
+  &Heading {
+    font-size: 4rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  &Text {
+    font-size: 3rem;
+    margin: 1rem 0;
+    display: inline-block;
+  }
+
+  &List li {
+    list-style: none;
+    font-size: 3rem;
+  }
+  &Link {
+    outline: none;
+    font-size: 3rem;
+    color: $color-black;
+    border-bottom: 2px solid $color-primary;
+  }
+}

@@ -18,7 +18,6 @@ const PortfolioSection = () => {
           </div>
           <p className={classes.portfolioDescription}>
             Goal: The goal was to design the UI consuming an API i built for a{" "}
-            <br />
             fictional camp using advanced React and Redux techniques & concepts.
           </p>
           <div className={classes.portfolioLinks}>
@@ -55,7 +54,6 @@ const PortfolioSection = () => {
           </div>
           <p className={classes.portfolioDescription}>
             Goal: The goal of the project is to maintain a repo of resuable CSS{" "}
-            <br />
             code that other developers can find useful when building sites.
           </p>
           <div className={classes.portfolioLinks}>
@@ -82,7 +80,6 @@ const PortfolioSection = () => {
           </div>
           <p className={classes.portfolioDescription}>
             Goal: The goal was to design a landing page for a fictional bitcoin{" "}
-            <br />
             trading company using cutting edge CSS.
           </p>
           <div className={classes.portfolioLinks}>

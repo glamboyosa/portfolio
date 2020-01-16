@@ -1,7 +1,51 @@
 $color-white: #fff;
+$color-black: #000;
 $color-orange-dark: #cf6d17;
 $color-orange-light: #e67e22;
+.nav {
+  background-color: $color-black;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+  &Checkbox {
+    display: none;
+  }
+
+  &Label {
+    display: none;
+  }
+  &List {
+    display: flex;
+    float: right;
+    list-style: none;
+    & li {
+      text-decoration: none;
+      color: $color-white;
+      font-family: inherit;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+      &::after {
+        content: " ";
+        height: 2px;
+        display: block;
+        background-color: $color-orange-dark;
+      }
+    }
+  }
+}
+a {
+  text-decoration: none;
+  color: $color-white;
+  font-family: inherit;
+}
 .header {
+  &Link {
+    text-decoration: none;
+    color: $color-white;
+    font-family: inherit;
+  }
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -18,7 +62,7 @@ $color-orange-light: #e67e22;
   height: 90vh;
   color: $color-white;
   position: relative;
-  font-size: 30px;
+  font-size: 3rem;
   text-align: center;
   &Text {
     font-size: 5.5rem;
@@ -29,15 +73,9 @@ $color-orange-light: #e67e22;
   }
 }
 
-a {
-  text-decoration: none;
-  color: $color-white;
-  font-family: inherit;
-}
-
 .btn {
   color: $color-white;
-  padding: 10px 30px;
+  padding: 1rem 3rem;
   font-family: inherit;
   display: inline-block;
   text-transform: uppercase;
@@ -45,7 +83,7 @@ a {
   outline: none;
   border: 1px solid $color-orange-light;
   background-color: $color-orange-dark;
-  margin-right: 15px;
+  // margin-right: 15px;
   position: relative;
 
   &::after {
@@ -72,8 +110,31 @@ a {
 
 @media only screen and (max-width: 860px) {
   .header {
+    &Link:first-of-type {
+      color: $color-white;
+    }
     &Text {
       font-size: 4rem;
+    }
+  }
+  .nav {
+    &Label {
+      float: right;
+      display: block;
+    }
+    &List {
+      display: none;
+    }
+
+    &Checkbox:checked + &List {
+      display: block;
+      padding: 1.5rem 3rem;
+      background-color: $color-black;
+      margin-top: 3rem;
+      margin-right: -3rem;
+      & li {
+        color: $color-white;
+      }
     }
   }
 }

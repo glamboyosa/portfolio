@@ -9,7 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "../index.scss"
-import Footer from "./UI/Footer/Footer"
 import Aux from "../hoc/hoc"
 import { Element } from "react-scroll"
 const Layout = ({ children }) => {
@@ -26,9 +25,6 @@ const Layout = ({ children }) => {
   return (
     <Aux>
       <main>{children}</main>
-      {/* <Element name="contact">
-        <Footer />
-      </Element> */}
     </Aux>
   )
 }
