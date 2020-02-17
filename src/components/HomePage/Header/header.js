@@ -77,10 +77,10 @@ const Header = () => {
   return (
     <div className={classes.header}>
       <nav className={isFixed && classes.nav}>
-        <label className={classes.navLabel} for="checkbox">
-          <IoIosMenu />
-        </label>
         <input type="checkbox" id="checkbox" className={classes.navCheckbox} />
+        <label className={classes.navLabel} for="checkbox">
+          <span className={classes.navIcon}>&nbsp;</span>
+        </label>
         <ul className={classes.navList}>
           <li>
             {" "}
