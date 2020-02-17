@@ -29,12 +29,15 @@ $color-white: #fff;
     box-shadow: 0 1rem 1rem rgba($color-black, 0.6);
     margin: 1.5rem;
     transition: all 0.6s;
+
     &:hover {
       transform: translateY(-2rem);
     }
+
     &:not(:hover) {
       transform: translateY(0);
     }
+
     &:not(:last-child) {
       margin-right: 2rem;
     }
@@ -42,14 +45,18 @@ $color-white: #fff;
 
   &Image {
     height: 70vh;
+    background-size: cover;
 
     &1 {
       background-image: url("https://i.imgur.com/QCPbtHb.png");
+
     }
 
     &2 {
       background-image: url("https://media.giphy.com/media/13XW2MJE0XCoM0/giphy.gif");
-      background-size: cover;
+
+      transform: scaleX(1.11);
+      margin-top: -1rem;
     }
 
     &3 {

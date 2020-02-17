@@ -3,7 +3,7 @@ import classes from "./header.module.scss"
 import TypedContainer from "../../../Containers/Typed/TypedContainer"
 import { Link as GatsbyLink } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { IoIosList } from "react-icons/io"
+import { IoIosMenu } from "react-icons/io"
 import {
   Link,
   Element,
@@ -78,7 +78,7 @@ const Header = () => {
     <div className={classes.header}>
       <nav className={isFixed && classes.nav}>
         <label className={classes.navLabel} for="checkbox">
-          <IoIosList />
+          <IoIosMenu />
         </label>
         <input type="checkbox" id="checkbox" className={classes.navCheckbox} />
         <ul className={classes.navList}>
