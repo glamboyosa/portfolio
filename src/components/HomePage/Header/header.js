@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import classes from "./header.module.scss"
 import TypedContainer from "../../../Containers/Typed/TypedContainer"
 import { Link as GatsbyLink } from "gatsby"
@@ -14,6 +14,7 @@ import {
 } from "react-scroll"
 const Header = () => {
   const [isFixed, setIsFixed] = useState(false)
+  const list = useRef("")
   console.log(isFixed)
   const fixNav = () => {
     if (window.scrollY > 500) {
@@ -32,12 +33,14 @@ const Header = () => {
       console.log("end", arguments)
     })
     window.addEventListener("scroll", fixNav)
+    list.current.addEventListener("click", checkHandler)
   }, [])
   useEffect(() => {
     return () => {
       Events.scrollEvent.remove("begin")
       Events.scrollEvent.remove("end")
       window.removeEventListener("scroll", fixNav)
+      list.current.removeEventListener("click", checkHandler)
       console.log("unmounted the DOM")
     }
   }, [])
@@ -74,6 +77,9 @@ const Header = () => {
       })
     )
   }
+  const checkHandler = () => {
+    document.getElementById("checkbox").checked = false
+  }
   return (
     <div className={classes.header}>
       <nav className={isFixed && classes.nav}>
@@ -81,7 +87,7 @@ const Header = () => {
         <label className={classes.navLabel} for="checkbox">
           <span className={classes.navIcon}>&nbsp;</span>
         </label>
-        <ul className={classes.navList}>
+        <ul className={classes.navList} ref={list}>
           <li>
             {" "}
             <Link to="home" spy={true} smooth={true} duration={1000}>

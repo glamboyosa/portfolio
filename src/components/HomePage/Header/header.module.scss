@@ -21,9 +21,11 @@ $color-grey: #333;
   }
 
   &List {
+
     display: flex;
     float: right;
     list-style: none;
+
 
     & li {
       text-decoration: none;
@@ -138,12 +140,14 @@ a {
       float: right;
       display: block;
       margin-right: 1rem;
+      cursor: pointer;
     }
 
     &Icon {
       position: relative;
       transition: all .2s;
       top: 2.5rem;
+
 
       &,
       &::before,
@@ -178,8 +182,11 @@ a {
       display: none;
     }
 
+
+
     &Checkbox:checked+&Label &Icon {
       background-color: transparent;
+      z-index: 900;
     }
 
     &Checkbox:checked+&Label &Icon::before {
@@ -193,15 +200,30 @@ a {
     }
 
     &Checkbox:checked~&List {
-      display: block;
-      padding: 1.5rem 3rem;
-      background-color: $color-black;
-      margin-top: 3rem;
-      margin-right: -3rem;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      display: inline-block;
+      left: 0;
+      top: 0;
+      z-index: 100;
+
+
+      background-color: $color-orange-dark;
+
 
       & li {
         color: $color-white;
+        position: relative;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%)
       }
+    }
+
+    &Checkbox:checked~&List li:hover {
+      border-bottom: 3px solid $color-black;
+      width: 10%;
     }
   }
 }
