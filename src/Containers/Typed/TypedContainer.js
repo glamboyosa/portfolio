@@ -7,7 +7,7 @@ const TypedContainer = () => {
       strings: [
         `I'm a Front-end developer,`,
         `Web designer,`,
-        `Lead guitarist,`,
+        `Lead guitarist wannabe,`,
         `JavaScript enthusiast.`,
       ],
       typeSpeed: 80,

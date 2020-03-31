@@ -100,6 +100,12 @@ const Header = () => {
             </Link>
           </li>
           <li>
+            {" "}
+            <Link to="stack" spy={true} smooth={true} duration={1000}>
+              Tools
+            </Link>
+          </li>
+          <li>
             <Link to="portfolio" spy={true} smooth={true} duration={1000}>
               Portfolio
             </Link>

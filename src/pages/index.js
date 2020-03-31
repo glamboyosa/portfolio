@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "../components/HomePage/Header/header"
 import FirstSection from "../components/HomePage/Section1/Section1"
+import SecondSection from "../components/HomePage/Section2/Section2"
 import Layout from "../components/layout"
 import Footer from "../components/UI/Footer/Footer"
 import PortfolioSection from "../components/HomePage/Section3/portfolio-section"
@@ -16,6 +17,9 @@ const IndexPage = () => {
 
       <Element name="about">
         <FirstSection />
+      </Element>
+      <Element name="stack">
+        <SecondSection />
       </Element>
       <Element name="portfolio">
         <PortfolioSection />

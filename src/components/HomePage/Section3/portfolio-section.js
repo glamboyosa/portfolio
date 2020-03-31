@@ -3,33 +3,35 @@ import classes from "./section3.module.scss"
 const PortfolioSection = () => {
   return (
     <div className={classes.portfolio}>
-      <h3 className={classes.portfolioHeadingPrimary}>Portfolio</h3>
+      <h3 className={classes.portfolioHeadingPrimary}>Featured Projects</h3>
       <div className={classes.portfolioFlexContainer}>
         <div className={classes.portfolioCard}>
           <div
             className={[classes.portfolioImage, classes.portfolioImage1].join(
               " "
             )}
-          ></div>
-          <h2 className={classes.portfolioHeadingSecondary}>Yinyagi News</h2>
+          />
+          <h2 className={classes.portfolioHeadingSecondary}>Seduire</h2>
           <div className={classes.portfolioSkills}>
             <span className={classes.portfolioSkillsText}>Tools: </span>
-            React, Redux, Node, Express.
+            React, TypeScript, Apollo Client, Node, Express-GraphQL, Stripe API
+            & Styled-Components.
           </div>
           <p className={classes.portfolioDescription}>
-            Goal: The goal was to design the UI consuming an API i built for a{" "}
-            fictional camp using advanced React and Redux techniques & concepts.
+            Goal: The goal was to build an online shop using fullstack GraphQL
+            stack, cutting edge technologies and advanced techniques with
+            emphasis and the design and UX.
           </p>
           <div className={classes.portfolioLinks}>
             <a
               className={classes.portfolioLinksTag}
-              href="http://yinaginews.herokuapp.com/"
+              href="https://naughty-lichterman-46db1e.netlify.com/"
             >
               Check it out!
             </a>
             <a
               className={classes.portfolioLinksTag}
-              href="https://github.com/glamboyosa/yinaginews"
+              href="https://github.com/glamboyosa/seduire-frontend"
             >
               View the source code !
             </a>
@@ -72,26 +74,26 @@ const PortfolioSection = () => {
             className={[classes.portfolioImage, classes.portfolioImage3].join(
               " "
             )}
-          ></div>
-          <h2 className={classes.portfolioHeadingSecondary}>DZT Coins</h2>
+          />
+          <h2 className={classes.portfolioHeadingSecondary}>Camp Mason</h2>
           <div className={classes.portfolioSkills}>
             <span className={classes.portfolioSkillsText}>Tools: </span>
-            HTML & SCSS.
+            React, Redux, Node, Express.
           </div>
           <p className={classes.portfolioDescription}>
-            Goal: The goal was to design a landing page for a fictional bitcoin{" "}
-            trading company using cutting edge CSS.
+            Goal: The goal was to design the UI consuming an API i built for a{" "}
+            fictional camp using advanced React and Redux techniques & concepts.
           </p>
           <div className={classes.portfolioLinks}>
             <a
               className={classes.portfolioLinksTag}
-              href="https://cranky-spence-ace670.netlify.com/"
+              href="http://campmason.herokuapp.com/"
             >
               Check it out!
             </a>
             <a
               className={classes.portfolioLinksTag}
-              href="https://github.com/glamboyosa/DZT"
+              href="https://github.com/glamboyosa/campmason"
             >
               View the source code !
             </a>

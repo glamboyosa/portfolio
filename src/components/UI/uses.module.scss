@@ -1,17 +1,22 @@
 $color-primary: #cf6d17;
 $color-black: #000;
+
 .uses {
   padding: 2rem;
+  width: 70%;
+  margin: 0 auto;
+
   &:not(:last-child) {
     border-bottom: 4px solid $color-primary;
-    width: 50%;
-    margin: 0 auto;
+
   }
+
   &Heading {
     font-size: 4rem;
     text-align: center;
     margin: 1rem 0;
   }
+
   &Text {
     font-size: 3rem;
     margin: 1rem 0;
@@ -22,6 +27,7 @@ $color-black: #000;
     list-style: none;
     font-size: 3rem;
   }
+
   &Link {
     outline: none;
     font-size: 3rem;

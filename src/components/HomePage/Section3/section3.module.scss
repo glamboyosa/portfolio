@@ -46,10 +46,9 @@ $color-white: #fff;
   &Image {
     height: 70vh;
     background-size: cover;
-
+    background-position: center;
     &1 {
-      background-image: url("https://i.imgur.com/QCPbtHb.png");
-
+      background-image: url("https://i.imgur.com/9LKi1LS.png");
     }
 
     &2 {
@@ -60,7 +59,7 @@ $color-white: #fff;
     }
 
     &3 {
-      background-image: url("https://i.imgur.com/CGniByY.png");
+      background-image: url("https://i.imgur.com/XpSMWqZ.png");
     }
   }
 

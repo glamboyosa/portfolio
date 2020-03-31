@@ -114,6 +114,14 @@ const Uses = () => {
               Sublime Text Duplicate
             </a>
           </li>
+          <li>
+            <a
+              className={classes.usesLink}
+              href="https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components"
+            >
+              vscode-styled-components
+            </a>
+          </li>
         </ul>
       </div>
     </Aux>
