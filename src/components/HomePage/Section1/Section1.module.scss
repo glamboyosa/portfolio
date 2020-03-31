@@ -1,14 +1,16 @@
 $color-black: #000;
+
 .section1 {
   padding: 1rem;
   font-size: 3rem;
   text-align: center;
   color: $color-black;
+
   &Heading {
     font-size: 5rem;
     text-align: center;
-    text-decoration: underline;
   }
+
   &Text {
     font-size: 3rem;
   }
