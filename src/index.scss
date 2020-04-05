@@ -17,3 +17,11 @@ body {
 .u-center-text {
   text-align: center;
 }
+.AnimationReveal {
+  transform: translateX(0);
+  transition: all 0.5s;
+}
+.AnimationHidden {
+  transform: translateX(-100vw);
+  transition: all 0.5s;
+}
