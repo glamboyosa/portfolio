@@ -8,7 +8,7 @@ $color-grey: #333;
   background-color: $color-black;
   position: fixed;
   width: 100%;
-  z-index: 200;
+  z-index: 300;
 
   &Label {
     opacity: 0;
@@ -32,13 +32,17 @@ $color-grey: #333;
       &:not(:last-child) {
         margin-right: 2rem;
       }
-
-      &::after {
-        content: " ";
-        height: 2px;
-        display: block;
-        background-color: $color-orange-dark;
+      &:hover,
+      &:active {
+        border-bottom: 3px solid $color-orange-dark;
+        margin-bottom: 2px;
       }
+      // &::after {
+      //   content: " ";
+      //   height: 2px;
+      //   display: block;
+      //   background-color: $color-orange-dark;
+      // }
     }
   }
 }
@@ -72,6 +76,7 @@ a {
   height: 100vh;
   color: $color-white;
   position: relative;
+  //clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   font-size: 3rem;
   text-align: center;
 

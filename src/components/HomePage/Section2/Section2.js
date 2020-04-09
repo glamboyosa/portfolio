@@ -16,7 +16,12 @@ const Section2 = () => {
     childElementRef.current
   )
   return (
-    <div ref={parentElementRef} style={{ backgroundColor: "#edf0f1" }}>
+    <div
+      ref={parentElementRef}
+      style={{
+        backgroundColor: "#edf0f1",
+      }}
+    >
       <div ref={childElementRef}>
         {isElementIntersecting ? (
           <div className="AnimationReveal">

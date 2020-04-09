@@ -15,11 +15,11 @@ $color-white-dark: #edf0f1;
   color: $color-black;
   margin: 0 1rem;
 
-
   &Image {
-    width: 10%;
+    width: 8%;
     height: 100%;
   }
 }
 
-@media only screen and (max-width: 860px) {}
+@media only screen and (max-width: 860px) {
+}

@@ -11,7 +11,7 @@ const useIntersectionObserver = (pageParentElement, pageChildElement) => {
       }
       let observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-          entry.isIntersecting && entry.intersectionRatio === 1
+          entry.isIntersecting && entry.intersectionRatio >= 0.5
             ? setIsElementingIntersecting(true)
             : setIsElementingIntersecting(false)
         })
