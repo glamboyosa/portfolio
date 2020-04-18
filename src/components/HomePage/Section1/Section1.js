@@ -33,7 +33,7 @@ const Section1 = () => {
                   I'm a frontend focused fullstack developer passionate about
                   React, Hooks, GraphQL and design. I'm also author of the{" "}
                   <a
-                    style={{ color: "#000" }}
+                    className={classes.section1Link}
                     href="https://www.npmjs.com/package/uwadie"
                     target="_blank"
                   >

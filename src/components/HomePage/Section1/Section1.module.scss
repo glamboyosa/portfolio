@@ -1,5 +1,5 @@
 $color-black: #000;
-
+$color-orange-light: #e67e22;
 .section1 {
   padding: 1rem;
   font-size: 3rem;
@@ -9,6 +9,20 @@ $color-black: #000;
   &Heading {
     font-size: 5rem;
     text-align: center;
+  }
+  &Link {
+    color: $color-black;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 4px;
+      width: 90%;
+      background-color: $color-orange-light;
+    }
   }
   &FlexParent {
     display: flex;
