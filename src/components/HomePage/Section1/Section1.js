@@ -31,7 +31,7 @@ const Section1 = () => {
               <div>
                 <p className={classes.section1Text}>
                   I'm a frontend focused fullstack developer passionate about
-                  React, Hooks, GraphQL and design. I'm also author of the{" "}
+                  React (Native), Hooks & GraphQL. I'm also author of the{" "}
                   <a
                     className={classes.section1Link}
                     href="https://www.npmjs.com/package/uwadie"
@@ -70,7 +70,7 @@ const Section1 = () => {
 
               <p className={classes.section1Text}>
                 I'm a frontend focused fullstack developer passionate about
-                React, Hooks, GraphQL and design. <br /> When i'm not coding or
+                React (Native), Hooks & GraphQL. <br /> When i'm not coding or
                 writing blog posts, i'm usually thrashing out licks on guitar a
                 la Stevie Ray Vaughan or on Twitter or you could catch me on
                 Youtube watching every and <br />

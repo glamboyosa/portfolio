@@ -29,13 +29,37 @@ const Section2 = () => {
               Tech Stack
             </h1>
             <div className={classes.section2}>
-              <img className={classes.section2Image} src={JavaScript} />
-              <img className={classes.section2Image} src={TypeScript} />
-              <img className={classes.section2Image} src={ReactIcon} />
-              <img className={classes.section2Image} src={Node} />
-              <img className={classes.section2Image} src={Express} />
-              <img className={classes.section2Image} src={GraphQl} />
-              <img className={classes.section2Image} src={Sass} />
+              <img
+                className={classes.section2Image}
+                src={JavaScript}
+                title="JavaScript"
+              />
+              <img
+                className={classes.section2Image}
+                src={TypeScript}
+                title="TypeScript"
+              />
+              <img
+                className={classes.section2Image}
+                src={ReactIcon}
+                title="React"
+              />
+              <img
+                className={classes.section2Image}
+                src={Node}
+                title="Node.js"
+              />
+              <img
+                className={classes.section2Image}
+                src={Express}
+                title="Express"
+              />
+              <img
+                className={classes.section2Image}
+                src={GraphQl}
+                title="GraphQL"
+              />
+              <img className={classes.section2Image} src={Sass} title="SCSS" />
             </div>{" "}
           </div>
         ) : (
