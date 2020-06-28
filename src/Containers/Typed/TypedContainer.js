@@ -5,7 +5,7 @@ const TypedContainer = () => {
   useEffect(() => {
     init("#element", {
       strings: [
-        `I'm a Front-end developer,`,
+        `I'm a UI developer,`,
         `Web designer,`,
         `Lead guitarist wannabe,`,
         `JavaScript enthusiast.`,
