@@ -20,8 +20,9 @@ $color-white: #fff;
 
   &FlexContainer {
     margin: 1rem;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   &Card {
@@ -38,31 +39,13 @@ $color-white: #fff;
       transform: translateY(0);
     }
 
-    &:not(:last-child) {
-      margin-right: 2rem;
-    }
+    // &:not(:last-child) {
+    //   margin-right: 2rem;
+    // }
   }
-
-  &Image {
-    height: 70vh;
-    background-size: cover;
-    background-position: center;
-    &1 {
-      background-image: url("https://i.imgur.com/9LKi1LS.png");
-    }
-
-    &2 {
-      background-image: url("https://media.giphy.com/media/13XW2MJE0XCoM0/giphy.gif");
-
-      transform: scaleX(1.11);
-      margin-top: -1rem;
-    }
-
-    &3 {
-      background-image: url("https://i.imgur.com/XpSMWqZ.png");
-    }
+  &HeadingSecondary {
+    text-align: center;
   }
-
   &Skills {
     margin: 1rem 0;
 
@@ -97,7 +80,7 @@ $color-white: #fff;
 @media only screen and (max-width: 850px) {
   .portfolio {
     &FlexContainer {
-      flex-wrap: wrap;
+      grid-template-columns: repeat(auto-fill, 35rem);
     }
 
     &Image {
