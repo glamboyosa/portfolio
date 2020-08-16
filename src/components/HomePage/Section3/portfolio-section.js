@@ -7,8 +7,7 @@ const PortfolioSection = () => {
       stack: `React, TypeScript, Apollo Client, Node, Express-GraphQL, Stripe API 
     & Styled-Components.`,
       description: `Goal: The goal was to build an online shop using fullstack GraphQL
-    stack, cutting edge technologies and advanced techniques with
-    emphasis and the design and UX.`,
+    , cutting edge technologies and advanced techniques.`,
       liveLink: "https://naughty-lichterman-46db1e.netlify.com/",
       githubLink: "https://github.com/glamboyosa/seduire-frontend",
     },
@@ -23,7 +22,7 @@ const PortfolioSection = () => {
     {
       heading: "React Native News",
       stack: `React Native`,
-      description: `Goal: develop a React Native mobile application with offline 
+      description: `Goal: The goal of this project was to develop a React Native mobile application with offline 
     reading functionality.`,
       liveLink: null,
       githubLink: "https://github.com/glamboyosa/react-native-news",
@@ -56,6 +55,7 @@ const PortfolioSection = () => {
             <div className={classes.portfolioLinks}>
               {projectItem.liveLink && (
                 <a
+                  target="__blank"
                   className={classes.portfolioLinksTag}
                   href={projectItem.liveLink}
                 >
@@ -63,6 +63,7 @@ const PortfolioSection = () => {
                 </a>
               )}
               <a
+                target="__blank"
                 className={classes.portfolioLinksTag}
                 href={projectItem.githubLink}
               >
