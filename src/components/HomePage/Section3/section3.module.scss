@@ -1,7 +1,7 @@
 $color-orange: #cf6d17;
 $color-black: #000;
 $color-white: #fff;
-
+$color-orange-light: #e67e22;
 .portfolio {
   position: relative;
   padding: 2rem;
@@ -45,6 +45,17 @@ $color-white: #fff;
   }
   &HeadingSecondary {
     text-align: center;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 95%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 4px;
+      width: 35%;
+      background-color: $color-orange-light;
+    }
   }
   &Skills {
     margin: 1rem 0;
