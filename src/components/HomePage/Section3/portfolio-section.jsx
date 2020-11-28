@@ -3,6 +3,13 @@ import classes from "./section3.module.scss"
 const PortfolioSection = () => {
   const projects = [
     {
+      heading: "Mey",
+      stack: `React & TypeScript`,
+      description: `Goal: The goal was to build out custom hooks that handle the request lifecycle while consuming REST APIs`,
+      liveLink: null,
+      githubLink: "https://github.com/glamboyosa/mey",
+    },
+    {
       heading: "Seduire",
       stack: `React, TypeScript, Apollo Client, Node, Express-GraphQL, Stripe API 
     & Styled-Components.`,
@@ -12,12 +19,11 @@ const PortfolioSection = () => {
       githubLink: "https://github.com/glamboyosa/seduire-frontend",
     },
     {
-      heading: "Reusable CSS Components",
-      stack: `HTML & CSS.`,
-      description: `Goal: The goal of the project is to maintain a repo of resuable CSS
-    code that other developers can find useful when building sites.`,
+      heading: "Uwadie",
+      stack: `Node & JavaScript`,
+      description: `Goal: The goal was to build out a package that returns the preformatted time to users. Useful for chat apps`,
       liveLink: null,
-      githubLink: "https://github.com/glamboyosa/Reusable-CSS-Components",
+      githubLink: "https://github.com/glamboyosa/uwadie",
     },
     {
       heading: "React Native News",
@@ -26,6 +32,14 @@ const PortfolioSection = () => {
     reading functionality.`,
       liveLink: null,
       githubLink: "https://github.com/glamboyosa/react-native-news",
+    },
+    {
+      heading: "Reusable CSS Components",
+      stack: `HTML & CSS.`,
+      description: `Goal: The goal of the project is to maintain a repo of resuable CSS
+    code that other developers can find useful when building sites.`,
+      liveLink: null,
+      githubLink: "https://github.com/glamboyosa/Reusable-CSS-Components",
     },
     {
       heading: "Camp Mason",

@@ -1,8 +1,6 @@
-import React, { useRef } from "react"
-import classes from "./Section1.module.scss"
-import useIntersectionObserver from "../../../libs/hooks/useIntersectionObserver"
+import React from "react"
 import ProfilePhoto from "../../../images/Potrait.png"
-import useMobile from "../../../libs/hooks/useMobile"
+import classes from "./Section1.module.scss"
 const Section1 = () => {
   return (
     <div className={classes.section1}>
@@ -26,7 +24,15 @@ const Section1 = () => {
               (Native), Hooks & GraphQL. I'm also author of the{" "}
               <a
                 className={classes.section1Link}
-                href="https://www.npmjs.com/package/uwadie"
+                href="https://www.github.com/glamboyosa/mey"
+                target="_blank"
+              >
+                Mey
+              </a>{" "}
+              package and the{" "}
+              <a
+                className={classes.section1Link}
+                href="https://www.github.com/glamboyosa/uwadie"
                 target="_blank"
               >
                 Uwadie

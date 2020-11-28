@@ -1,14 +1,12 @@
-import React, { useRef } from "react"
-import classes from "./section2.module.scss"
-import ReactIcon from "../../../images/React.png"
-import TypeScript from "../../../images/typescript.png"
-import Node from "../../../images/nodejs.png"
+import React from "react"
 import Express from "../../../images/express.png"
 import GraphQl from "../../../images/graphql.png"
-import Sass from "../../../images/sass.png"
 import JavaScript from "../../../images/JavaScript.png"
-import useIntersectionObserver from "../../../libs/hooks/useIntersectionObserver"
-import useMobile from "../../../libs/hooks/useMobile"
+import Node from "../../../images/nodejs.png"
+import ReactIcon from "../../../images/React.png"
+import Sass from "../../../images/sass.png"
+import TypeScript from "../../../images/typescript.png"
+import classes from "./section2.module.scss"
 const Section2 = () => {
   return (
     <div

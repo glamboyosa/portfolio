@@ -1,21 +1,11 @@
-import React, { useState, useEffect, useRef } from "react"
-import classes from "./header.module.scss"
-import TypedContainer from "../../../Containers/Typed/TypedContainer"
 import { Link as GatsbyLink } from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { IoIosMenu } from "react-icons/io"
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll"
+import React, { useEffect, useRef, useState } from "react"
+import { animateScroll as scroll, Events, Link, scroller } from "react-scroll"
+import TypedContainer from "../../../Containers/Typed/TypedContainer"
+import classes from "./header.module.scss"
 const Header = () => {
   const [isFixed, setIsFixed] = useState(false)
   const list = useRef("")
-  console.log(isFixed)
   const fixNav = () => {
     if (window.scrollY > 500) {
       setIsFixed(!isFixed)
@@ -24,7 +14,6 @@ const Header = () => {
     }
   }
   useEffect(() => {
-    console.log("mounts the DOM")
     Events.scrollEvent.register("begin", function() {
       console.log("begin", arguments)
     })
@@ -34,14 +23,11 @@ const Header = () => {
     })
     window.addEventListener("scroll", fixNav)
     list.current.addEventListener("click", checkHandler)
-  }, [])
-  useEffect(() => {
     return () => {
       Events.scrollEvent.remove("begin")
       Events.scrollEvent.remove("end")
       window.removeEventListener("scroll", fixNav)
       list.current.removeEventListener("click", checkHandler)
-      console.log("unmounted the DOM")
     }
   }, [])
   const scrollToTop = () => {

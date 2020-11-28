@@ -14,7 +14,6 @@ const IndexPage = () => {
       <Element name="home">
         <Header />
       </Element>
-
       <Element name="about">
         <FirstSection />
       </Element>
