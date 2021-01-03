@@ -3,6 +3,13 @@ import classes from "./section3.module.scss"
 const PortfolioSection = () => {
   const projects = [
     {
+      heading: "Setupu",
+      stack: `Next.js, TypeScript, GraphQL Code Generator, TypeGraphQL, Cloudinary & PostgreSQL `,
+      description: `Goal: The goal was to build out an application that allowed users to upload their dev setups, share (on Android & iOS) and upvote / downvote Reddit style`,
+      liveLink: "https://setupy-web.vercel.app",
+      githubLink: "https://github.com/glamboyosa/setupy-api",
+    },
+    {
       heading: "Mey",
       stack: `React & TypeScript`,
       description: `Goal: The goal was to build out custom hooks that handle the request lifecycle while consuming REST APIs`,
